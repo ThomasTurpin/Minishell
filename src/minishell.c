@@ -6,7 +6,7 @@
 /*   By: tturpin <tturpin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 11:21:58 by tturpin           #+#    #+#             */
-/*   Updated: 2024/11/29 17:17:35 by tturpin          ###   ########.fr       */
+/*   Updated: 2024/11/29 17:20:28 by tturpin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	main(void)
 			break ;
 		}
 		// ft_parsing(input);
+		//exec;
+		//check les signaux;
 		// printf("Vous avez tapé : %s\n", input);
 		free(input);
 	}
