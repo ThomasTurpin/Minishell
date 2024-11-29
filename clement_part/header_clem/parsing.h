@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
+/*   parsing.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cballet <cballet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 14:41:34 by tturpin           #+#    #+#             */
-/*   Updated: 2024/11/26 15:39:01 by cballet          ###   ########.fr       */
+/*   Created: 2024/11/26 15:59:56 by cballet           #+#    #+#             */
+/*   Updated: 2024/11/26 16:09:53 by cballet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINISHELL_H
-# define MINISHELL_H
+#ifndef PARSING_H
+# define PARSING_H
 
 # include <stdbool.h>
 # include <stdio.h>
 # include <unistd.h>
 
-typedef struct s_cmd
+typedef struct s_token
 {
-	char			**cmd;/*cmd[0] = commande et cmd[1 ou plus] = arguments*/
-	int				fd_input;
-	int				fd_output;
-	bool			pipe;
-	struct s_cmd	*next;
-	struct s_cmd	*prev;
-}					t_cmd;
+    char *input;
+} t_token;
 
 
 
