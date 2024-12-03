@@ -6,12 +6,12 @@
 /*   By: cballet <cballet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:59:56 by cballet           #+#    #+#             */
-/*   Updated: 2024/12/03 16:00:43 by cballet          ###   ########.fr       */
+/*   Updated: 2024/12/03 17:42:26 by cballet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINISHELL_H
-# define MINISHELL_H
+#ifndef CLEM_H
+# define CLEM_H
 
 # include <errno.h>
 # include <fcntl.h>
