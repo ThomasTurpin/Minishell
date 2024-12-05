@@ -6,12 +6,12 @@
 #    By: tturpin <tturpin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/26 16:52:12 by tturpin           #+#    #+#              #
-#    Updated: 2024/11/29 16:52:39 by tturpin          ###   ########.fr        #
+#    Updated: 2024/12/05 17:30:42 by tturpin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC		= cc
-CFLAGS	= -Wall -Werror -Wextra -lreadline
+CFLAGS	= -Wall -Werror -Wextra
 NAME	= test_minishell
 
 SRC_PATH = src/
@@ -36,7 +36,7 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME) -lreadline
 
 clean:
 	rm -rf $(OBJ_PATH)
