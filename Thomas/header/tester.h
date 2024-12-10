@@ -6,7 +6,7 @@
 /*   By: tturpin <tturpin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 12:39:14 by tturpin           #+#    #+#             */
-/*   Updated: 2024/11/29 15:52:50 by tturpin          ###   ########.fr       */
+/*   Updated: 2024/12/10 15:54:44 by tturpin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@
 # include <sys/types.h>
 # include <sys/wait.h>
 # include <unistd.h>
+
+typedef struct s_minishell
+{
+	char				history;
+}						t_minishell;
 
 typedef struct s_command
 {
